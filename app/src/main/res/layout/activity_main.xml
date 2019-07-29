@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/five_day"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/item_five_day_forecast"
+                android:id="@+id/day0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <include layout="@layout/item_five_day_forecast"
+                android:id="@+id/day1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <include layout="@layout/item_five_day_forecast"
+                android:id="@+id/day2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <include layout="@layout/item_five_day_forecast"
+                android:id="@+id/day3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <include layout="@layout/item_five_day_forecast"
+                android:id="@+id/day4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white" >
+
+        <Button
+            android:id="@+id/kelvin_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/temperature_unit_button_bg"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/degrees_kelvin"
+            android:textColor="@color/temperature_unit_button_text" />
+
+        <Button
+            android:id="@+id/celsius_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/temperature_unit_button_bg"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/degrees_celsius"
+            android:textColor="@color/temperature_unit_button_text" />
+
+        <Button
+            android:id="@+id/fahrenheit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/temperature_unit_button_bg"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/degrees_fahrenheit"
+            android:textColor="@color/temperature_unit_button_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

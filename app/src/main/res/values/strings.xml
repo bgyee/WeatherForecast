@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+
+    <!-- Literal Strings -->
+    <string name="five_day">5 Day</string>
+    <string name="search">Search</string>
+
+    <!-- Non-literal Strings -->
+    <string name="search_hint">City OR City, Country</string>
+
+    <!-- Symbols -->
+    <string name="temperature_degrees">%s\u00B0</string>
+    <string name="kelvin_symbol">K</string>
+    <string name="celsius_symbol">C</string>
+    <string name="fahrenheit_symbol">F</string>
+    <string name="degrees_kelvin">\u00B0K</string>
+    <string name="degrees_celsius">\u00B0C</string>
+    <string name="degrees_fahrenheit">\u00B0F</string>
+
+    <!-- Constants -->
+    <string name="five_day_forecast_base_url">https://api.openweathermap.org/data/2.5/forecast?q=%1$s&amp;appid=%2$s</string>
+    <string name="api_key">a94ace9be7994ce0beb8b5e27cefcd7b</string>
+    <string name="default_city">Toronto</string>
+    <string name="default_country">Canada</string>
+    <string name="day_of_week_format">EEE</string>
+    <string name="hour_of_day_format">HH</string>
+</resources>
